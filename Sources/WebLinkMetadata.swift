@@ -138,7 +138,7 @@ public class WebLinkMetadata {
             if !(200..<300).contains(response.statusCode) {
                 callback(nil, WebLinkMetadataError.unsuccessfulStatusCode(response.statusCode, error))
             } else {
-                guard let htmlString = String(data: data, encoding: .utf8) else {
+                guard let htmlString = String(data: data, encoding: contentType?.hasSuffix("ISO-8859-1") ?? false ? .isoLatin1 : .utf8) else {
                     callback(nil, WebLinkMetadataError.encodingError)
                     return
                 }

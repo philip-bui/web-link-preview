@@ -69,7 +69,7 @@ _ = WebLinkMetadata(url: "https://www.youtube.com") { webLinkMetadata, error in
  
 ## Improvements
 
-- Use String Encoding from Content-Type charset. Currently uses UTF-8 which is also compatible with ASCII.
+- Support more String Encodings from Content-Type charset. Supports UTF-8 and Latin1.
 - Use Cache-Control and Expires headers for NSCache expiration.
 - HTTP Stub testing.
 
