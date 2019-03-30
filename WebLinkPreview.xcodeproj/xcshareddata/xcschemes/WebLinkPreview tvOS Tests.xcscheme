@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4C5D4BF22469F6C00A4BE01"
-               BuildableName = "WebLinkPreview_tvOS.framework"
-               BlueprintName = "WebLinkPreview tvOS"
+               BlueprintIdentifier = "D4C5D4CB22469FD200A4BE01"
+               BuildableName = "WebLinkPreview tvOS Tests.xctest"
+               BlueprintName = "WebLinkPreview tvOS Tests"
                ReferencedContainer = "container:WebLinkPreview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4BF22469F6C00A4BE01"
-            BuildableName = "WebLinkPreview_tvOS.framework"
-            BlueprintName = "WebLinkPreview tvOS"
-            ReferencedContainer = "container:WebLinkPreview.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4BF22469F6C00A4BE01"
-            BuildableName = "WebLinkPreview_tvOS.framework"
-            BlueprintName = "WebLinkPreview tvOS"
+            BlueprintIdentifier = "D4C5D4CB22469FD200A4BE01"
+            BuildableName = "WebLinkPreview tvOS Tests.xctest"
+            BlueprintName = "WebLinkPreview tvOS Tests"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +73,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4BF22469F6C00A4BE01"
-            BuildableName = "WebLinkPreview_tvOS.framework"
-            BlueprintName = "WebLinkPreview tvOS"
+            BlueprintIdentifier = "D4C5D4CB22469FD200A4BE01"
+            BuildableName = "WebLinkPreview tvOS Tests.xctest"
+            BlueprintName = "WebLinkPreview tvOS Tests"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

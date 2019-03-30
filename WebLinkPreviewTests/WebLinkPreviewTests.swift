@@ -39,19 +39,73 @@ class WebLinkPreviewTests: XCTestCase {
         XCTAssertTrue(openGraph.isEmpty)
         XCTAssertNotNil(webLinkMetadata.themeColor)
         XCTAssertEqual(webLinkMetadata.themeColor, "#ff0000")
+
         #if canImport(UIKit)
         XCTAssertNotNil(webLinkMetadata.themeUIColor)
-        XCTAssertEqual(webLinkMetadata.themeUIColor, UIColor(red: 1, green: 0, blue: 0, alpha: 1))
+        XCTAssertEqual(webLinkMetadata.themeUIColor, UIColor.red)
         
-        let green = webLinkMetadata.UIColorFrom(hex: "#00ff00")
-        XCTAssertNotNil(green)
-        XCTAssertEqual(green, UIColor(red: 0, green: 1, blue: 0, alpha: 1))
-        
-        let blue = webLinkMetadata.UIColorFrom(hex: "#0000ff")
-        XCTAssertNotNil(blue)
-        XCTAssertEqual(blue, UIColor(red: 0, green: 0, blue: 1, alpha: 1))
+        XCTAssertNotNil(webLinkMetadata.textUIColor)
+        XCTAssertEqual(webLinkMetadata.textUIColor, UIColor.white)
         #endif
     }
+    
+    #if canImport(UIKit)
+    func testUIColorFrom() {
+        let green = webLinkMetadata.UIColorFrom(hex: "00ff00") //6
+        XCTAssertNotNil(green)
+        XCTAssertEqual(green, UIColor.green)
+        
+        let blue = webLinkMetadata.UIColorFrom(hex: "#0000ff") // 7
+        XCTAssertNotNil(blue)
+        XCTAssertEqual(blue, UIColor.blue)
+        
+        let alphaBlue = webLinkMetadata.UIColorFrom(hex: "ff0000ff") // 8
+        XCTAssertNotNil(alphaBlue)
+        XCTAssertEqual(alphaBlue, UIColor.blue)
+        
+        let alphaClear = webLinkMetadata.UIColorFrom(hex: "#000000ff") // 9
+        XCTAssertNotNil(alphaClear)
+        XCTAssertEqual(alphaClear, UIColor(red: 0, green: 0, blue: 1, alpha: 0))
+    }
+    
+    func testTextColorFrom() {
+        let blackTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.black)
+        XCTAssertNotNil(blackTextColor)
+        XCTAssertEqual(blackTextColor, UIColor.white)
+        
+        let whiteTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.white)
+        XCTAssertNotNil(whiteTextColor)
+        XCTAssertEqual(whiteTextColor, UIColor.black)
+        
+        let tertiaryLabelTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor(white: 0.75, alpha: 1))
+        XCTAssertNotNil(tertiaryLabelTextColor)
+        XCTAssertEqual(tertiaryLabelTextColor, UIColor.black)
+        
+        let lightGrayTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.lightGray)
+        XCTAssertNotNil(lightGrayTextColor)
+        XCTAssertEqual(lightGrayTextColor, UIColor.white)
+        
+        let darkGrayTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.darkGray)
+        XCTAssertNotNil(darkGrayTextColor)
+        XCTAssertEqual(darkGrayTextColor, UIColor.white)
+        
+        let redTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.red)
+        XCTAssertNotNil(redTextColor)
+        XCTAssertEqual(redTextColor, UIColor.white)
+        
+        let greenTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.green)
+        XCTAssertNotNil(greenTextColor)
+        XCTAssertEqual(greenTextColor, UIColor.white)
+        
+        let blueTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.blue)
+        XCTAssertNotNil(blueTextColor)
+        XCTAssertEqual(blueTextColor, UIColor.white)
+        
+        let purpleTextColor = webLinkMetadata.UITextColorFor(backgroundColor: UIColor.purple)
+        XCTAssertNotNil(purpleTextColor)
+        XCTAssertEqual(purpleTextColor, UIColor.white)
+    }
+    #endif
 
     func testIconLinkParsing() {
         let iconLink = webLinkMetadata.parse(iconFrom: """
