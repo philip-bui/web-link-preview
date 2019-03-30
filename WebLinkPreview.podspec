@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'WebLinkPreview'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license= { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Web Link Preview.'
   s.description = 'Create website link previews, given a web link.'

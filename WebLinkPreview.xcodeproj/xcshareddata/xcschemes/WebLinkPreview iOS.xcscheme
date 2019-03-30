@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-               BuildableName = "WebLinkPreview_iOS.framework"
+               BuildableName = "WebLinkPreview.framework"
                BlueprintName = "WebLinkPreview iOS"
                ReferencedContainer = "container:WebLinkPreview.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
+            BuildableName = "WebLinkPreview.framework"
             BlueprintName = "WebLinkPreview iOS"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
+            BuildableName = "WebLinkPreview.framework"
             BlueprintName = "WebLinkPreview iOS"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
+            BuildableName = "WebLinkPreview.framework"
             BlueprintName = "WebLinkPreview iOS"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>

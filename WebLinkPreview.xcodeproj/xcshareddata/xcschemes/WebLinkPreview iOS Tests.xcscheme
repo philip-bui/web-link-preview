@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-               BuildableName = "WebLinkPreview_iOS.framework"
-               BlueprintName = "WebLinkPreview iOS"
+               BlueprintIdentifier = "D4C5D48A22467A8A00A4BE01"
+               BuildableName = "WebLinkPreview iOS Tests.xctest"
+               BlueprintName = "WebLinkPreview iOS Tests"
                ReferencedContainer = "container:WebLinkPreview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
-            BlueprintName = "WebLinkPreview iOS"
-            ReferencedContainer = "container:WebLinkPreview.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
-            BlueprintName = "WebLinkPreview iOS"
+            BlueprintIdentifier = "D4C5D48A22467A8A00A4BE01"
+            BuildableName = "WebLinkPreview iOS Tests.xctest"
+            BlueprintName = "WebLinkPreview iOS Tests"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +73,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C5D4582246071000A4BE01"
-            BuildableName = "WebLinkPreview_iOS.framework"
-            BlueprintName = "WebLinkPreview iOS"
+            BlueprintIdentifier = "D4C5D48A22467A8A00A4BE01"
+            BuildableName = "WebLinkPreview iOS Tests.xctest"
+            BlueprintName = "WebLinkPreview iOS Tests"
             ReferencedContainer = "container:WebLinkPreview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
